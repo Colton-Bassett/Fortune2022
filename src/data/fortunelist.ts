@@ -148,7 +148,7 @@ let FortuneList = [
             'Nothing is more difficult, and therefore more valuable, than being able to decide.'
     },
     {
-        message: 'Eat ice cream.'
+        message: 'Eat some ice cream.'
     }
 ];
 
