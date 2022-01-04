@@ -1,38 +1,151 @@
+:root {
+    --brand: #519aa4;
+    --accent: #525e7d;
+    --accent-yellow: #ffd000;
+    --dark-not-black: #41494a;
+    --off-white: #fbfdfd;
+    --white: #fff;
+
+    --font-primary: 'Roboto', sans-serif;
+    --num-grid-columns: 4;
+    --page-gutter: 24px;
+    --section-spacing: 56px;
+    --page-max-width: 1260px;
+    --bottom-nav-gutter: 52px;
+    --home-height: calc(100vh - 190px);
+
+    --fortune-cookie-width: 280px;
+    --question-cookie-width: 360px;
+    --numbers-cookie-width: 240px;
+    --open-cookie-width: 320px;
+
+    --cookie-paper-min-width: 320px;
+    --cookie-paper-max-width: 320px;
+    --open-cookie-margin: 120px;
+
+    --fortune-font-size: 14px;
+    --bottom-nav-wrapper-width: 100%;
+
+    --close-icon-top: 120px;
+    --close-icon-left: 92%;
+    --close-icon-size: 1.2;
+}
+
+.carousel-button {
+    display: none;
+}
+
 .App {
-  text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--dark-not-black);
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (min-width: 768px) {
+    :root {
+        --num-grid-columns: 8;
+        --page-gutter: 40px;
+        --section-spacing: 80px;
+
+        --fortune-cookie-width: 340px;
+        --question-cookie-width: 460px;
+        --numbers-cookie-width: 280px;
+        --open-cookie-width: 420px;
+
+        --cookie-paper-min-width: 420px;
+        --cookie-paper-max-width: 420px;
+        --open-cookie-margin: 90px;
+
+        --fortune-font-size: 16px;
+
+        --close-icon-top: 75px;
+        /* --close-icon-left: 92%; */
+        --close-icon-size: 1.5;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    .carousel-button {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    :root {
+        --num-grid-columns: 12;
+        --section-spacing: 120px;
+
+        --fortune-cookie-width: 400px;
+        --question-cookie-width: 520px;
+        --numbers-cookie-width: 340px;
+        --open-cookie-width: 480px;
+
+        --cookie-paper-min-width: 480px;
+        --cookie-paper-max-width: 480px;
+        --open-cookie-margin: 70px;
+
+        --fortune-font-size: 16px;
+
+        --close-icon-top: 55px;
+        --close-icon-left: 94%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    :root {
+        --bottom-nav-wrapper-width: 80%;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    :root {
+        --close-icon-top: 0px;
+        --open-cookie-margin: 0px;
+    }
 }

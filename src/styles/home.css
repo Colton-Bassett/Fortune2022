@@ -1,0 +1,22 @@
+.home-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--off-white);
+}
+
+.home {
+    height: var(--home-height);
+    min-height: 425px;
+    width: 100%;
+    max-width: var(--page-max-width);
+    display: grid;
+    grid-template-columns: repeat(var(--num-grid-columns), 1fr);
+    gap: 0 20px;
+    box-sizing: border-box;
+}
+
+.carousel-container {
+    grid-column: span var(--num-grid-columns);
+}

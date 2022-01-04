@@ -1,0 +1,95 @@
+.cookie-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: var(--home-height);
+}
+
+.cookie-wrapper {
+}
+
+.fortune-cookie {
+    width: var(--fortune-cookie-width);
+    margin-right: 40px;
+    margin-bottom: 48px;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+}
+
+.fortune-cookie:hover {
+    transform: scale(1.05);
+}
+
+.answer-cookie {
+    width: var(--question-cookie-width);
+    margin-bottom: 48px;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+}
+
+.answer-cookie:hover {
+    transform: scale(1.05);
+}
+
+.numbers-cookie {
+    width: var(--numbers-cookie-width);
+    margin-bottom: 48px;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+}
+
+.numbers-cookie:hover {
+    transform: scale(1.05);
+}
+
+.open-cookie {
+    width: var(--open-cookie-width);
+    margin-top: var(--open-cookie-margin);
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.cookie-fortune-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    /* flex-grow: 1; */
+}
+
+.cookie-fortune-paper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100px;
+    width: 85%;
+    min-width: var(--cookie-paper-min-width);
+    max-width: var(--cookie-paper-max-width);
+    background-color: #eff1f1;
+    border-radius: 30px;
+    line-height: 1.25rem;
+}
+
+.cookie-fortune {
+    max-width: 85%;
+    text-align: center;
+    font-size: var(--fortune-font-size);
+    color: var(--dark-not-black);
+}
+
+.close-icon {
+    position: relative;
+    top: var(--close-icon-top);
+    left: var(--close-icon-left);
+    color: var(--brand);
+    transform: scale(var(--close-icon-size));
+    cursor: pointer;
+}
+
+.close-icon:hover {
+    color: var(--accent-yellow);
+    transition-property: color !important;
+    transition-timing-function: ease-in-out !important;
+    transition-duration: 0.2s !important;
+}

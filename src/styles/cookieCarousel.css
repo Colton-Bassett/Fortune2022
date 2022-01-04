@@ -1,0 +1,19 @@
+.carousel-button {
+    background-color: transparent;
+    border-width: 0;
+    margin: 0 30px;
+}
+
+.carousel-icon {
+    cursor: pointer;
+    height: 70px !important;
+    width: 70px !important;
+    color: var(--brand);
+}
+
+.carousel-icon:hover {
+    color: var(--accent-yellow);
+    transition-property: color !important;
+    transition-timing-function: ease-in-out !important;
+    transition-duration: 0.2s !important;
+}

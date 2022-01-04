@@ -1,0 +1,107 @@
+.nav-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(var(--num-grid-columns), 1fr);
+    gap: 0 20px;
+    background-color: var(--off-white);
+    padding: 0 var(--page-gutter);
+    box-sizing: border-box;
+}
+
+.nav-wrapper {
+    grid-column: span var(--num-grid-columns);
+}
+
+.nav {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 42px;
+    color: var(--dark-not-black);
+    text-decoration: none;
+}
+
+.nav-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-cookie-type {
+    margin-right: 12px;
+    border-radius: 40px;
+    font-size: 14px;
+    padding: 12px 18px;
+    color: var(--white);
+    background-color: var(--accent);
+    text-transform: capitalize;
+}
+
+.nav-info-button {
+    color: var(--dark-not-black) !important;
+    height: 28px !important;
+    width: 28px !important;
+    cursor: pointer;
+}
+
+.nav-info-button:hover {
+    color: #000 !important;
+}
+
+.nav-dialog-body-container {
+    padding: 0 var(--page-gutter) !important;
+}
+
+.nav-dialog-title {
+    display: flex;
+    justify-content: center;
+    grid-column: span var(--num-grid-columns);
+    margin-top: 42px;
+    margin-bottom: 16px;
+    color: var(--dark-not-black);
+}
+
+.nav-dialog-subtitle {
+    display: flex;
+    justify-content: center;
+    grid-column: span var(--num-grid-columns);
+    color: var(--dark-not-black);
+    text-align: center;
+}
+
+.nav-dialog-banner {
+    width: 100%;
+    margin: auto;
+    margin-top: 24px;
+    grid-column: span var(--num-grid-columns);
+    border-radius: 45px;
+}
+.nav-dialog-body {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    grid-column: span var(--num-grid-columns);
+}
+
+.nav-dialog-body-title {
+    /* font-size: 26px;
+    font-weight: 600;
+    color: var(--dark-not-black); */
+}
+
+.nav-dialog-section {
+    margin-top: 24px;
+    grid-column: span var(--num-grid-columns);
+}
+
+.nav-dialog-section-title {
+    font-weight: 600;
+    color: var(--brand);
+}
+
+.nav-dialog-section-text {
+    margin-top: 6px;
+}

@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
+import { Home } from './components/home';
+import { Nav } from './components/nav';
+import { BottomNav } from './components/bottomnav';
+import HandleCookieType from './helpers/handleCookieType';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [cookieType, setCookieType] = useState('cookie');
+
+    return (
+        <div className="App">
+            <Nav cookieType={cookieType}></Nav>
+            <Home setCookieType={setCookieType}></Home>
+            <BottomNav
+                cookieType={cookieType}
+                setCookieType={setCookieType}
+                handleCookieType={HandleCookieType}
+            ></BottomNav>
+        </div>
+    );
 }
 
 export default App;
