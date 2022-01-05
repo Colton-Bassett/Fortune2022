@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 import { Home } from './components/home';
@@ -8,6 +8,10 @@ import HandleCookieType from './helpers/handleCookieType';
 
 function App() {
     const [cookieType, setCookieType] = useState('cookie');
+
+    useEffect(() => {
+        window.scrollTo(0, 1);
+    });
 
     return (
         <div className="App">
