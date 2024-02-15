@@ -1,14 +1,37 @@
-# Getting Started with Create React App
+# "Fortune" Mobile-First Design
 
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+[Fortune](https://main.d5gu3rkaleeeh.amplifyapp.com/) is a fun and engaging
+virtual fortune cookie website offering users advice, answers to questions, or
+lucky numbers. This project explores an innovative approach to mobile-first user
+experience design, prioritizing interactivity with users. The app features
+hosting capabilities with AWS Amplify, along with efficient storage and
+manipulation of static JSON data, ensuring seamless performance and
+accessibility.
 
-This project uses the following libraries: MaterialUI, Prettier,
+This project uses the following dependencies: MaterialUI, Prettier,
 React-material-ui-carousel
 
-## Available Scripts
+This project was created with
+[Create React App](https://github.com/facebook/create-react-app).
 
-In the project directory, you can run:
+## Project Goals
+
+-   Design a user interface with a mobile-first approach for seamless
+    accessibility across devices.
+
+-   Develop an innovative and engaging user experience, prioritizing
+    interactivity and usability.
+
+-   Expand knowledge of AWS Amplify to enhance project hosting capabilities.
+
+-   Deepen understanding of the Material UI framework to leverage its
+    capabilities effectively.
+
+-   Explore the use of Yarn package manager for the first time.
+
+-   Craft a fun and practical project with real-world applications.
+
+## Available Scripts
 
 ### `yarn start`
 
@@ -55,10 +78,3 @@ You don’t have to ever use `eject`. The curated feature set is suitable for
 small and middle deployments, and you shouldn’t feel obligated to use this
 feature. However we understand that this tool wouldn’t be useful if you couldn’t
 customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
